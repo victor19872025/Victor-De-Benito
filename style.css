@@ -1,0 +1,160 @@
+:root {
+  --color-bg: #fafafa;
+  --color-text: #222;
+  --color-accent: #7b3f00;
+  --color-accent-light: #9c5a2e;
+  --font-main: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+h1, h2 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.2rem;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(
+    to bottom right,
+    var(--color-accent),
+    var(--color-accent-light)
+  );
+  color: #fff;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.btn {
+  background: #fff;
+  color: var(--color-accent);
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #eee;
+}
+
+/* Sections */
+section {
+  padding: 4rem 0;
+}
+
+.services ul {
+  list-style: none;
+}
+
+.service-list li {
+  margin-bottom: 0.5rem;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.portfolio-item {
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 6px;
+}
+
+/* Contact */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font: inherit;
+}
+
+.contact-form button {
+  align-self: flex-start;
+}
+
+/* Footer */
+.site-footer {
+  background: #f0f0f0;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.875rem;
+}
